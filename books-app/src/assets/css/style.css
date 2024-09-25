@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+:root {
+    --red: #8F0000;
+    --grey: #EEEEEE;
+    --black: #000000;
+    --pink: #E6C3C3;
+    --white: #FFFFFF;
+    --ghost: #dcdcdc;
+    --border: #ECECEC;
+}
+
+/* elements  */
+
+.container {
+    padding: 10px 20px;
+}
+.container-skeleton {
+    width: 100%;
+    display: block;
+    padding: 10px 20px;
+    display: block;
+    background-color: var(--white);
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--black);
+}
+.main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.back-button {
+    font-weight: bold;
+    font-size: 18px;
+    border: 1.5px solid var(--pink);
+    border-radius: 10px;
+    background-color: var(--pink);
+    display: block;
+    padding: 4px;
+    width: 118px;
+    height: 32px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+.container-back {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.container-post-detail {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.container-grey {
+    display: block;
+    border: 14px solid var(--grey);
+    background-color: var(--grey);
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--black);
+}
+.container-posts {
+    margin: 0 24px;
+    display: block;
+    border: 4px solid var(--grey);
+    background-color: var(--grey);
+    border-radius: 20px;
+}
+.container-white {
+    display: block;
+    border: 8px solid var(--grey);
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--black);
+    margin: 8px 0;
+    padding: 20px 8px;
+}
+
+/* components */
+
+.header {
+    background-color: var(--red);
+}
+.category-row {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.category-item {
+    display: block;
+    border: 8px solid var(--grey);
+    background-color: var(--white);
+    border-radius: 25px;
+    padding: 20px 8px;
+    padding-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+.category-image {
+    margin-right: 12px;
+}
+.category-title {
+    font-size: 20px;
+}
+.category-title, .category-image {
+    display: inline-block;
+    vertical-align: middle;
+}
+.category-item img {
+    width: 36px;
+    height: 36px;
+}
+.btn-category {
+    width: 32px;
+    height: 32px;
+    left: 10px;
+    display: block;
+    cursor: pointer;
+}
+.home-title {
+    display: block;
+    color: var(--red);
+    font-size: 22px;
+    padding: 20px 0;
+}
+.book-title, .book-image {
+    display: inline-block;
+    vertical-align: middle;
+}
+.book-image {
+    margin-right: 10px;
+}
+.book-title {
+    font-size: 20px;
+}
+.author-book {
+    font-size: 16px;
+}
+.year-of-release {
+    font-size: 14px;
+}
+.author-book, .year-of-release {
+    display: block;
+    font-weight: bold;
+    padding: 8px 0;
+}
+.post-booktitle {
+    text-align: center;
+    font-size: 24px;
+}
+.post-bookauthor {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+}
+.description {
+    text-align: justify;
+    font-size: 14px;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding: 12px 0;
+}
+.postbook {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.mobile-block {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.mobile-block__header {
+    padding: 8px 0;
+}
+.loading-card {
+    padding: px 0;
+    border-bottom: 1px solid var(--border);
+    margin: 0 12px;
+}
+.loading-detail {
+    padding: 30px 0;
+}
+.loading-row {
+    display: block; 
+    border: 14px solid var(--grey);
+    background-color: var(--grey);
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--black);
+}
+.loading-item {
+    border-radius: 30px;
+    display: block;
+    border: 4px solid var(--grey);
+    background-color: var(--white);
+    border-radius: 25px;
+    padding: 16px 6px;
+    padding-left: 20px;
+    margin: 8px 0;
+}
+.skeleton-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--border);
+    animation: ghost 1s infinite linear;
+    margin: 0 auto;
+}
+.skeleton-small-text {
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 100px;
+    height: 20px;
+    background-color: var(--border);
+    animation: ghost 1s infinite linear;
+    margin-top: 20px;
+}
+.skeleton-small-text, .skeleton-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+}
+.skeleton-title, .skeleton-text, .skeleton-big-text, .skeleton-image, .skeleton-title-home {
+    width: 100%;
+    background-color: var(--border);
+    border-radius: 8px;
+    animation: ghost 1s infinite linear;
+    margin-bottom: 10px;
+}
+.skeleton-title {
+    height: 25px;
+}
+.skeleton-title-home {
+    height: 25px;
+    width: 120px;
+    margin: 20px;
+    /* margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px; */
+}
+.skeleton-text {
+    height: 15px;
+}
+.skeleton-big-text {
+    height: 120px;
+}
+.skeleton-image {
+    height: 220px;
+}
+@keyframes ghost {
+    0% {
+        background-color: var(--border);
+    }
+    50% {
+        background-color: var(--ghost);
+    }
+    100% {
+        background-color: var(--border);
+    }
+}
+
+.error {
+    background-color: var(--danger);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light);
+}
+.error-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.error-description {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+.white-btn {
+    background-color: var(--pink);
+    color: var(--black);
+    text-decoration: none;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+}
